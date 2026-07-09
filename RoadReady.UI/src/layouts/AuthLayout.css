@@ -1,0 +1,129 @@
+/* ==========================================================
+   Auth Layout
+========================================================== */
+
+.auth-layout{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ==========================================================
+   Container
+========================================================== */
+
+.auth-container{
+    width:100%;
+    max-width:480px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.auth-header{
+    text-align:center;
+    padding:35px 30px;
+    background:rgba(37,99,235,.15);
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.auth-header h1{
+    margin:0;
+    color:#ffffff;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.auth-header p{
+    margin-top:12px;
+    color:#e2e8f0;
+    font-size:17px;
+    font-weight:400;
+}
+
+/* ==========================================================
+   Content
+========================================================== */
+
+.auth-content{
+    padding:35px;
+}
+
+/* ==========================================================
+   Links
+========================================================== */
+
+.auth-content a{
+    color:#60a5fa;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.auth-content a:hover{
+    color:#93c5fd;
+    text-decoration:underline;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width:768px){
+
+    .auth-layout{
+        padding:20px;
+    }
+
+    .auth-container{
+        max-width:100%;
+        border-radius:18px;
+    }
+
+    .auth-header{
+        padding:28px 20px;
+    }
+
+    .auth-header h1{
+        font-size:34px;
+    }
+
+    .auth-header p{
+        font-size:15px;
+    }
+
+    .auth-content{
+        padding:25px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .auth-header h1{
+        font-size:30px;
+    }
+
+    .auth-header p{
+        font-size:14px;
+    }
+
+    .auth-content{
+        padding:20px;
+    }
+
+}

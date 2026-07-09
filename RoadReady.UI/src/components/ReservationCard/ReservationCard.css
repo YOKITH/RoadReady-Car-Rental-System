@@ -1,0 +1,285 @@
+/* ==========================================================
+   Reservation Card
+========================================================== */
+
+.reservation-card {
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    padding: 25px;
+
+    transition: all 0.3s ease;
+
+}
+
+.reservation-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.reservation-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+.reservation-header h2 {
+
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 1.7rem;
+
+}
+
+.reservation-header p {
+
+    margin-top: 6px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================================
+   Reservation Status Badge
+========================================================== */
+
+.reservation-card-status {
+
+    display: inline-block;
+
+    min-width: 110px;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    text-transform: capitalize;
+
+    line-height: 1.2;
+
+}
+
+/* Pending */
+
+.reservation-card-status.pending {
+
+    background: #f59e0b;
+
+}
+
+/* Confirmed */
+
+.reservation-card-status.confirmed {
+
+    background: #2563eb;
+    color:white;
+
+}
+
+/* Completed */
+
+.reservation-card-status.completed {
+
+    background: #16a34a;
+
+}
+
+/* Cancelled */
+
+.reservation-card-status.cancelled {
+
+    background: #dc2626;
+
+}
+
+/* In Progress */
+
+.reservation-card-status.in-progress,
+.reservation-card-status.inprogress {
+
+    background: #7c3aed;
+
+}
+
+/* Default */
+
+.reservation-card-status.default {
+
+    background: #6b7280;
+
+}
+
+/* ==========================================================
+   Reservation Details
+========================================================== */
+
+.reservation-body {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+.detail {
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+}
+
+.detail span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+
+}
+
+.detail strong {
+
+    color: #1e293b;
+
+    font-size: 17px;
+
+}
+
+/* ==========================================================
+   Footer Buttons
+========================================================== */
+
+.reservation-footer {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.pay-button,
+.cancel-button {
+
+    min-width: 150px;
+
+    padding: 11px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+.pay-button {
+
+    background: #2563eb;
+
+}
+
+.pay-button:hover {
+
+    background: #1d4ed8;
+
+}
+
+.cancel-button {
+
+    background: #dc2626;
+
+}
+
+.cancel-button:hover {
+
+    background: #b91c1c;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .reservation-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+    .reservation-body {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .reservation-footer {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .pay-button,
+    .cancel-button {
+
+        width: 100%;
+
+    }
+
+}

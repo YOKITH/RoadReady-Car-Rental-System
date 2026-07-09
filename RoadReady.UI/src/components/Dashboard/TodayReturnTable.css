@@ -1,0 +1,219 @@
+/* ==========================================================
+   Today Return Table Container
+========================================================== */
+
+.return-container {
+    background: #ffffff;
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.return-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.return-header h2 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.return-count {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.return-table-wrapper {
+    overflow-x: auto;
+}
+
+.return-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.return-table thead {
+    background: #2563eb;
+}
+
+.return-table th,
+.return-table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.return-table thead th {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.return-table tbody td {
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.return-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.return-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.return-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==========================================================
+   Return Status Badge
+========================================================== */
+
+.return-table-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.return-table-status.active {
+    background: #2563eb;
+}
+
+.return-table-status.checked-out {
+    background: #16a34a;
+}
+
+.return-table-status.default {
+    background: #6b7280;
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.checkout-btn,
+.completed-btn {
+    min-width: 120px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.checkout-btn {
+    background: #dc2626;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+}
+
+.completed-btn {
+    background: #6b7280;
+    color: #ffffff;
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .return-table {
+        min-width: 900px;
+        table-layout: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .return-container {
+        padding: 18px;
+    }
+
+    .return-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .return-header h2 {
+        font-size: 20px;
+    }
+
+    .return-count {
+        align-self: flex-start;
+        font-size: 13px;
+    }
+
+    .return-table th,
+    .return-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .return-table-status {
+        min-width: 100px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .checkout-btn,
+    .completed-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+}

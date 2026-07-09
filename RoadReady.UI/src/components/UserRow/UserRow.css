@@ -1,0 +1,128 @@
+/* ==========================================
+   Role Badge
+========================================== */
+
+.role{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:110px;
+    padding:8px 18px;
+    border-radius:30px;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.3px;
+    text-transform:capitalize;
+}
+
+/* Admin */
+
+.role.admin{
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+}
+
+/* Customer */
+
+.role.customer{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+/* Rental Agent */
+
+.role.rentalagent{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+/* ==========================================
+   Action Buttons
+========================================== */
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+}
+
+/* Shared Button Style */
+
+.edit-btn,
+.delete-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    min-width:110px;
+    padding:10px 18px;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+/* Edit Button */
+
+.edit-btn{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.edit-btn:hover{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+}
+
+/* Delete Button */
+
+.delete-btn{
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+}
+
+.delete-btn:hover{
+    background:linear-gradient(135deg,#dc2626,#b91c1c);
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(220,38,38,.25);
+}
+
+/* Active Click */
+
+.edit-btn:active,
+.delete-btn:active{
+    transform:scale(.97);
+}
+
+/* Focus */
+
+.edit-btn:focus,
+.delete-btn:focus{
+    outline:none;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:768px){
+
+    .action-buttons{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .edit-btn,
+    .delete-btn{
+        width:100%;
+        min-width:120px;
+    }
+
+    .role{
+        min-width:95px;
+        font-size:13px;
+        padding:7px 15px;
+    }
+
+}

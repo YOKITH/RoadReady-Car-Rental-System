@@ -1,0 +1,206 @@
+/* =====================================
+   Manage Cars Page
+===================================== */
+
+.manage-cars-page{
+    min-height:100vh;
+    background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);
+    padding:40px;
+}
+
+/* =====================================
+   Header
+===================================== */
+
+.manage-cars-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    background:#ffffff;
+    padding:28px 35px;
+    border-radius:20px;
+    border:1px solid #edf1f5;
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.06),
+        0 2px 8px rgba(15,23,42,.04);
+}
+
+.manage-cars-header h1{
+    margin:0;
+    font-size:42px;
+    font-weight:800;
+    color:#1e293b;
+    letter-spacing:.3px;
+    line-height:1.1;
+}
+
+.manage-cars-header p{
+    margin-top:10px;
+    color:#64748b;
+    font-size:18px;
+    line-height:1.5;
+}
+
+/* =====================================
+   Add Car Button
+===================================== */
+
+.add-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    width:auto;
+    min-width:160px;
+    height:48px;
+
+    padding:0 20px;
+
+    border:none;
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:#ffffff;
+    font-size:16px;
+    font-weight:600;
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+
+    transition:all .3s ease;
+}
+
+.add-button span{
+    font-size:22px;
+    font-weight:700;
+    line-height:1;
+}
+
+.add-button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 28px rgba(37,99,235,.35);
+}
+
+.add-button:active{
+    transform:scale(.97);
+}
+
+/* =====================================
+   Table Container
+===================================== */
+
+.table-container{
+    background:#ffffff;
+    border-radius:20px;
+    padding:28px;
+    border:1px solid #edf1f5;
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.06),
+        0 2px 8px rgba(15,23,42,.04);
+}
+
+/* =====================================
+   Loading
+===================================== */
+
+.loading{
+    padding:60px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    color:#64748b;
+}
+
+/* =====================================
+   Error
+===================================== */
+
+.error{
+    max-width:500px;
+    margin:30px auto;
+    padding:16px;
+    text-align:center;
+    color:#dc2626;
+    background:#fef2f2;
+    border:1px solid #fecaca;
+    border-radius:12px;
+    font-weight:600;
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+    .manage-cars-header{
+        padding:24px 28px;
+    }
+
+    .manage-cars-header h1{
+        font-size:38px;
+    }
+
+    .manage-cars-header p{
+        font-size:17px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .manage-cars-page{
+        padding:20px;
+    }
+
+    .manage-cars-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:22px;
+    }
+
+    .manage-cars-header h1{
+        font-size:34px;
+    }
+
+    .manage-cars-header p{
+        font-size:16px;
+    }
+
+    .add-button{
+        width:180px;
+        height:46px;
+        font-size:15px;
+        padding:0 18px;
+    }
+
+    .table-container{
+        padding:18px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .manage-cars-header{
+        padding:20px;
+    }
+
+    .manage-cars-header h1{
+        font-size:30px;
+    }
+
+    .manage-cars-header p{
+        font-size:15px;
+    }
+
+    .add-button{
+        width:100%;
+        height:46px;
+    }
+
+}

@@ -1,0 +1,171 @@
+/* =====================================
+   Why Choose Us Section
+===================================== */
+
+.why-choose-us{
+
+    padding:80px 8%;
+
+    background:#ffffff;
+
+}
+
+/* =====================================
+   Heading
+===================================== */
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-header h2{
+
+    font-size:40px;
+
+    color:#1e293b;
+
+    margin-bottom:15px;
+
+}
+
+.section-header p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+}
+
+/* =====================================
+   Grid
+===================================== */
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/* =====================================
+   Card
+===================================== */
+
+.feature-card{
+
+    background:#f8fafc;
+
+    padding:35px 30px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.feature-card:hover p{
+
+    color:#e2e8f0;
+
+}
+
+.feature-card:hover h3{
+
+    color:white;
+
+}
+
+.feature-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    color:#1e293b;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.feature-card p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+    .section-header h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .why-choose-us{
+
+        padding:60px 6%;
+
+    }
+
+    .section-header h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .section-header h2{
+
+        font-size:26px;
+
+    }
+
+    .feature-card{
+
+        padding:25px;
+
+    }
+
+}

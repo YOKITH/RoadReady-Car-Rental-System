@@ -1,0 +1,43 @@
+.show-payments{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.show-payments-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.show-payments-header h1{
+
+    color:#1e293b;
+
+    font-size:30px;
+
+    margin:0;
+
+}
+
+@media(max-width:768px){
+
+    .show-payments-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+}

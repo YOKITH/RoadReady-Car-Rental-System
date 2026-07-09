@@ -1,0 +1,206 @@
+/* ==========================================================
+   Modal Overlay
+========================================================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+/* ==========================================================
+   Modal
+========================================================== */
+
+.maintenance-modal {
+    width: 100%;
+    max-width: 650px;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+.maintenance-modal h2 {
+    margin: 0 0 25px;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ==========================================================
+   Vehicle Details
+========================================================== */
+
+.modal-details {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.modal-details p {
+    margin: 10px 0;
+    color: #444;
+    font-size: 15px;
+}
+
+.modal-details strong {
+    color: #222;
+}
+
+/* ==========================================================
+   Form
+========================================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group textarea {
+    width: 100%;
+    min-height: 120px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    resize: vertical;
+
+    outline: none;
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+}
+
+.form-group textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.2);
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.complete-btn,
+.cancel-btn {
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 24px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Complete */
+
+.complete-btn {
+    background: #198754;
+    color: #ffffff;
+}
+
+.complete-btn:hover {
+    background: #157347;
+}
+
+.complete-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Cancel */
+
+.cancel-btn {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+.cancel-btn:hover {
+    background: #bb2d3b;
+}
+
+/* ==========================================================
+   Animation
+========================================================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .maintenance-modal {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .maintenance-modal h2 {
+        font-size: 24px;
+    }
+
+    .modal-details {
+        padding: 16px;
+    }
+
+    .modal-details p {
+        font-size: 14px;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+    }
+
+    .complete-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+
+}

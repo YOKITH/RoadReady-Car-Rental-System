@@ -1,0 +1,138 @@
+/* ==========================================================
+   Payment History Page
+========================================================== */
+
+.payment-history-page {
+
+    min-height: 100vh;
+
+    padding: 50px 8%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+/* ==========================================================
+   Dark Overlay
+========================================================== */
+
+.payment-history-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    z-index: 0;
+}
+
+/* Keep content above overlay */
+
+.payment-history-page>* {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* ==========================================================
+   Container
+========================================================== */
+
+.payment-history-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .20);
+}
+
+/* ==========================================================
+   Title
+========================================================== */
+
+.payment-history-title {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .payment-history-page {
+
+        padding: 40px 6%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .payment-history-page {
+
+        padding: 30px 5%;
+    }
+
+    .payment-history-container {
+
+        padding: 25px;
+    }
+
+    .payment-history-title {
+
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .payment-history-page {
+
+        padding: 20px;
+    }
+
+    .payment-history-container {
+
+        padding: 20px;
+    }
+
+    .payment-history-title {
+
+        font-size: 28px;
+    }
+
+}

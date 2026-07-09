@@ -1,0 +1,45 @@
+.rating-stars {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+.star {
+
+    font-size: 32px;
+
+    color: #d1d5db;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    user-select: none;
+
+}
+
+.star:hover {
+
+    transform: scale(1.15);
+
+}
+
+.star.active {
+
+    color: #fbbf24;
+
+}
+
+@media (max-width:768px) {
+
+    .star {
+
+        font-size: 28px;
+
+    }
+
+}

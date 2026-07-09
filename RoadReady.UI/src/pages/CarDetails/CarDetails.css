@@ -1,0 +1,409 @@
+/* ======================================
+   Car Details Page
+====================================== */
+
+.car-details-page {
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 60px 8%;
+
+    background: linear-gradient(
+                    rgba(248,250,252,0.70),
+                    rgba(248,250,252,0.70)
+                ),
+                url("../../Images/fleet-bg.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #f8fafc;
+
+}
+
+/* ======================================
+   Main Container
+====================================== */
+
+.car-details-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    background: rgba(255,255,255,0.88);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/* ======================================
+   Car Information
+====================================== */
+
+.car-info-section h1 {
+
+    font-size: 40px;
+    color: #1e293b;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.available {
+
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+
+    padding: 8px 18px;
+    border-radius: 25px;
+
+    margin-bottom: 30px;
+
+    font-weight: 600;
+
+}
+
+.unavailable {
+
+    display: inline-block;
+
+    background: #dc2626;
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 25px;
+
+    margin-bottom: 30px;
+
+    font-weight: 600;
+
+}
+
+/* ======================================
+   Specifications
+====================================== */
+
+.car-specifications {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+.specification {
+
+    background: rgba(241,245,249,.85);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    transition: .3s;
+
+}
+
+.specification:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.specification strong {
+
+    color: #2563eb;
+    font-size: 16px;
+
+}
+
+.specification p {
+
+    margin-top: 8px;
+
+    color: #475569;
+
+    font-size: 15px;
+
+}
+
+/* ======================================
+   Description
+====================================== */
+
+.description {
+
+    margin-bottom: 30px;
+
+}
+
+.description h3 {
+
+    color: #1e293b;
+
+    margin-bottom: 10px;
+
+}
+
+.description p {
+
+    color: #64748b;
+
+    line-height: 1.8;
+
+}
+
+/* ======================================
+   Price
+====================================== */
+
+.price-section {
+
+    margin-bottom: 30px;
+
+}
+
+.price-section h2 {
+
+    color: #2563eb;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+}
+
+.price-section span {
+
+    font-size: 18px;
+
+    color: #64748b;
+
+}
+
+/* ======================================
+   Buttons
+====================================== */
+
+.button-group {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+.book-button,
+.review-button {
+
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+}
+
+.book-button {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+.book-button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+.book-button:disabled {
+
+    background: #94a3b8;
+
+    cursor: not-allowed;
+
+}
+
+.review-button {
+
+    background: white;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+
+}
+
+.review-button:hover {
+
+    background: #2563eb;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+/* ======================================
+   Reviews
+====================================== */
+
+.reviews-section {
+
+    margin-top: 50px;
+
+    background: rgba(255,255,255,.88);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.reviews-section h2 {
+
+    text-align: center;
+
+    color: #1e293b;
+
+    margin-bottom: 30px;
+
+    font-size: 32px;
+
+}
+
+/* ======================================
+   Loading & Error
+====================================== */
+
+.loading,
+.error {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+}
+
+.error {
+
+    color: #dc2626;
+
+}
+
+/* ======================================
+   Tablet
+====================================== */
+
+@media (max-width:992px) {
+
+    .car-details-page {
+
+        padding: 40px 5%;
+
+    }
+
+    .car-details-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ======================================
+   Mobile
+====================================== */
+
+@media (max-width:576px) {
+
+    .car-details-page {
+
+        padding: 25px;
+
+    }
+
+    .car-info-section h1 {
+
+        font-size: 30px;
+
+    }
+
+    .car-specifications {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .button-group {
+
+        flex-direction: column;
+
+    }
+
+    .book-button,
+    .review-button {
+
+        width: 100%;
+
+    }
+
+    .reviews-section {
+
+        padding: 20px;
+
+    }
+
+    .reviews-section h2 {
+
+        font-size: 24px;
+
+    }
+
+}

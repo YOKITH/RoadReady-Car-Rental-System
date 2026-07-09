@@ -1,0 +1,141 @@
+.delete-car-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.delete-car-container{
+
+    width:450px;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.delete-car-container h2{
+
+    color:#dc2626;
+
+    margin-bottom:20px;
+
+}
+
+.delete-message{
+
+    color:#475569;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+.delete-message strong{
+
+    color:#1e293b;
+
+}
+
+.button-group{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+.button-group button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+.cancel-btn{
+
+    background:#64748b;
+
+    color:white;
+
+}
+
+.cancel-btn:hover{
+
+    background:#475569;
+
+}
+
+.error{
+
+    color:red;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+@media(max-width:600px){
+
+    .delete-car-container{
+
+        width:90%;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+}

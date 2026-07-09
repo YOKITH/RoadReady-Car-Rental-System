@@ -1,0 +1,45 @@
+.review-list {
+
+    width: 100%;
+
+}
+
+.review-list h2 {
+
+    color: #1e3a5f;
+
+    margin-bottom: 25px;
+
+}
+
+.empty-review {
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    color: #666;
+
+    border: 1px dashed #cbd5e1;
+
+}
+
+.error-message {
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+}

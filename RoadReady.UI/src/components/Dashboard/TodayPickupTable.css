@@ -1,0 +1,219 @@
+/* ==========================================================
+   Today Pickup Table Container
+========================================================== */
+
+.pickup-container {
+    background: #ffffff;
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.pickup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pickup-header h2 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pickup-count {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.pickup-table-wrapper {
+    overflow-x: auto;
+}
+
+.pickup-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.pickup-table thead {
+    background: #2563eb;
+}
+
+.pickup-table th,
+.pickup-table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pickup-table thead th {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pickup-table tbody td {
+    color: #374151;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pickup-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.pickup-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.pickup-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==========================================================
+   Pickup Status Badge
+========================================================== */
+
+.pickup-table-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.pickup-table-status.confirmed {
+    background: #2563eb;
+}
+
+.pickup-table-status.checked-in {
+    background: #16a34a;
+}
+
+.pickup-table-status.default {
+    background: #6b7280;
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.checkin-btn,
+.completed-btn {
+    min-width: 110px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.checkin-btn {
+    background: #16a34a;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.checkin-btn:hover {
+    background: #15803d;
+    transform: translateY(-1px);
+}
+
+.completed-btn {
+    background: #6b7280;
+    color: #ffffff;
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .pickup-table {
+        min-width: 900px;
+        table-layout: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .pickup-container {
+        padding: 18px;
+    }
+
+    .pickup-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .pickup-header h2 {
+        font-size: 20px;
+    }
+
+    .pickup-count {
+        align-self: flex-start;
+        font-size: 13px;
+    }
+
+    .pickup-table th,
+    .pickup-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .checkin-btn,
+    .completed-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .pickup-table-status {
+        min-width: 100px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+}

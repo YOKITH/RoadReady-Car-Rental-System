@@ -1,0 +1,163 @@
+.maintenance-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.maintenance-form{
+
+    width:500px;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.maintenance-form h2{
+
+    text-align:center;
+
+    color:#1e293b;
+
+    margin-bottom:25px;
+
+}
+
+.maintenance-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.maintenance-form input,
+
+.maintenance-form textarea,
+
+.maintenance-form select{
+
+    padding:12px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.maintenance-form input:focus,
+
+.maintenance-form textarea:focus,
+
+.maintenance-form select:focus{
+
+    border-color:#2563eb;
+
+}
+
+.maintenance-form textarea{
+
+    resize:none;
+
+}
+
+.button-group{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+.button-group button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.button-group button:first-child{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.button-group button:first-child:hover{
+
+    background:#1d4ed8;
+
+}
+
+.cancel-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+.cancel-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+.error{
+
+    color:red;
+
+    text-align:center;
+
+}
+
+@media(max-width:600px){
+
+    .maintenance-form{
+
+        width:95%;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+}

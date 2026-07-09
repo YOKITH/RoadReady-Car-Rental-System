@@ -1,0 +1,188 @@
+/* ======================================
+   Car Card
+====================================== */
+
+.car-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+/* ======================================
+   Fleet Background
+====================================== */
+
+.fleet-section {
+    min-height: 100vh;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(248,250,252,0.75),
+            rgba(248,250,252,0.75)
+        ),
+        url("/Images/fleet-bg.png");   /* <-- Your image */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ======================================
+   Image
+====================================== */
+
+.car-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.car-card:hover .car-image img {
+    transform: scale(1.08);
+}
+
+/* ======================================
+   Status
+====================================== */
+
+.status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.available {
+    background: #16a34a;
+}
+
+.unavailable {
+    background: #dc2626;
+}
+
+/* ======================================
+   Content
+====================================== */
+
+.car-content {
+    padding: 22px;
+    flex: 1;
+}
+
+.car-content h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.car-content p {
+    margin-bottom: 10px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.car-content strong {
+    color: #334155;
+}
+
+/* ======================================
+   Price
+====================================== */
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.per-day {
+    color: #64748b;
+}
+
+/* ======================================
+   Buttons
+====================================== */
+
+.button-group {
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.details-button,
+.book-button {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.details-button {
+    background: #0f172a;
+    color: white;
+}
+
+.details-button:hover {
+    background: #1d4ed8;
+}
+
+.book-button {
+    background: #16a34a;
+    color: white;
+}
+
+.book-button:hover {
+    background: #15803d;
+}
+
+/* ======================================
+   Responsive
+====================================== */
+
+@media (max-width:768px) {
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .car-content h2 {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 26px;
+    }
+
+}

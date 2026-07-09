@@ -1,0 +1,181 @@
+/* ==========================================================
+   Check-Out Table
+========================================================== */
+
+.checkout-table-container {
+    background: #ffffff;
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.checkout-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.checkout-table-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.checkout-table-header input {
+    width: 320px;
+    padding: 10px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.checkout-table-header input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.20);
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.checkout-table-wrapper {
+    overflow-x: auto;
+}
+
+.checkout-table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+}
+
+.checkout-table thead {
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+.checkout-table th {
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.checkout-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #444;
+}
+
+.checkout-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* ==========================================================
+   Status Badge
+========================================================== */
+
+.checkout-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #d4edda;
+    color: #155724;
+    white-space: nowrap;
+}
+
+/* ==========================================================
+   Damage Badge
+========================================================== */
+
+.damage-yes {
+    display: inline-block;
+    background: #f8d7da;
+    color: #842029;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.damage-no {
+    display: inline-block;
+    background: #d1e7dd;
+    color: #146c43;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.no-data {
+    text-align: center;
+    padding: 35px;
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .checkout-table {
+        min-width: 900px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .checkout-table-container {
+        padding: 16px;
+    }
+
+    .checkout-table-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checkout-table-header h2 {
+        font-size: 20px;
+    }
+
+    .checkout-table-header input {
+        width: 100%;
+    }
+
+    .checkout-table th,
+    .checkout-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .status,
+    .damage-yes,
+    .damage-no {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

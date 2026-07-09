@@ -1,0 +1,61 @@
+/* ======================================
+   Reservation List
+====================================== */
+
+.reservation-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/* ======================================
+   Empty State
+====================================== */
+
+.empty-reservations{
+
+    text-align:center;
+
+    background:#ffffff;
+
+    padding:70px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.empty-reservations h2{
+
+    color:#1e293b;
+
+    margin-bottom:15px;
+
+}
+
+.empty-reservations p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+}
+
+/* ======================================
+   Responsive
+====================================== */
+
+@media(max-width:768px){
+
+    .empty-reservations{
+
+        padding:40px 20px;
+
+    }
+
+}

@@ -1,0 +1,150 @@
+/* ===========================================
+   Reservation Table Container
+=========================================== */
+
+.reservation-table-container {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================================
+   Table
+=========================================== */
+
+.reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reservation-status.ongoing{
+    background: #202121;
+    color: #eadede;
+}
+
+.reservation-table thead {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.reservation-table th {
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reservation-table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.reservation-table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.reservation-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* ===========================================
+   Reservation Status Badge
+=========================================== */
+
+.reservation-status {
+    display: inline-block;
+    min-width: 110px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+/* Pending */
+
+.reservation-status.pending {
+    background: #f59e0b;
+}
+
+/* Confirmed */
+
+.reservation-status.confirmed {
+    background: #2563eb;
+}
+
+/* Completed */
+
+.reservation-status.completed {
+    background: #16a34a;
+}
+
+/* Cancelled */
+
+.reservation-status.cancelled {
+    background: #dc2626;
+}
+
+/* In Progress */
+
+.reservation-status.inprogress,
+.reservation-status.in-progress {
+    background: #7c3aed;
+}
+
+/* Default */
+
+.reservation-status.default {
+    background: #6b7280;
+}
+
+/* ===========================================
+   Buttons
+=========================================== */
+
+.view-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.view-btn:hover {
+    background: #1d4ed8;
+}
+
+/* ===========================================
+   Empty State
+=========================================== */
+
+.empty-reservations {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    color: #64748b;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media (max-width: 768px) {
+
+    .reservation-table {
+        min-width: 1100px;
+    }
+
+}

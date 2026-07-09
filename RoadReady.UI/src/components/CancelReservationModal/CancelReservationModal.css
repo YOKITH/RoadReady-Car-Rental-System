@@ -1,0 +1,191 @@
+/* ===========================
+   Overlay
+=========================== */
+
+.modal-overlay{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+/* ===========================
+   Modal
+=========================== */
+
+.modal-container{
+
+    width:420px;
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.modal-container h2{
+
+    color:#1e293b;
+
+    margin-bottom:20px;
+
+}
+
+.modal-container p{
+
+    color:#475569;
+
+    margin-bottom:15px;
+
+    line-height:1.6;
+
+}
+
+.warning{
+
+    color:#dc2626;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Error
+=========================== */
+
+.error-message{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    margin:20px 0;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.modal-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.cancel-btn{
+
+    flex:1;
+
+    padding:12px;
+
+    background:#94a3b8;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:#64748b;
+
+}
+
+.confirm-btn{
+
+    flex:1;
+
+    padding:12px;
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.confirm-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+.cancel-btn:disabled,
+
+.confirm-btn:disabled{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:576px){
+
+    .modal-container{
+
+        width:90%;
+
+        padding:25px;
+
+    }
+
+    .modal-buttons{
+
+        flex-direction:column;
+
+    }
+
+}

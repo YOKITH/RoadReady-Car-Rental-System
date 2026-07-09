@@ -1,0 +1,156 @@
+/* ===========================================
+   Payment Table Container
+=========================================== */
+
+.payment-table-container{
+    background:#ffffff;
+    border-radius:12px;
+    overflow-x:auto;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ===========================================
+   Table
+=========================================== */
+
+.payment-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.payment-table thead{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.payment-table th{
+    padding:16px;
+    text-align:center;
+    font-size:16px;
+    font-weight:600;
+}
+
+.payment-table td{
+    padding:16px;
+    text-align:center;
+    vertical-align:middle;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.payment-table tbody tr{
+    transition:.3s;
+}
+
+.payment-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* ===========================================
+   Payment Status Badge
+=========================================== */
+
+.payment-status{
+    display:inline-block;
+    min-width:110px;
+    padding:8px 16px;
+    border-radius:999px;
+    color:#ffffff;
+    font-size:13px;
+    font-weight:600;
+    text-align:center;
+    text-transform:capitalize;
+    line-height:1.2;
+}
+
+/* Completed */
+
+.payment-status.completed{
+    background:#16a34a;
+}
+
+/* Pending */
+
+.payment-status.pending{
+    background:#f59e0b;
+}
+
+/* Failed */
+
+.payment-status.failed{
+    background:#dc2626;
+}
+
+/* Refunded */
+
+.payment-status.refunded{
+    background:#7c3aed;
+}
+
+/* Processing */
+
+.payment-status.processing{
+    background:#2563eb;
+}
+
+/* Success */
+
+.payment-status.success{
+    background:#10b981;
+}
+
+/* Paid */
+
+.payment-status.paid{
+    background:#059669;
+}
+
+/* Default */
+
+.payment-status.default{
+    background:#6b7280;
+}
+
+/* ===========================================
+   Button
+=========================================== */
+
+.view-btn{
+    border:none;
+    background:#2563eb;
+    color:#ffffff;
+    padding:8px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================================
+   Empty State
+=========================================== */
+
+.empty-payments{
+    background:#ffffff;
+    padding:40px;
+    text-align:center;
+    border-radius:12px;
+    color:#64748b;
+    font-size:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media(max-width:768px){
+
+    .payment-table{
+        min-width:1000px;
+    }
+
+}

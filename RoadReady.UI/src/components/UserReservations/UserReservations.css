@@ -1,0 +1,161 @@
+.user-reservations {
+
+    width: 100%;
+
+}
+
+.user-reservations h2 {
+
+    color: #1e293b;
+
+    margin-bottom: 25px;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+thead {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+th,
+td {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+tbody tr:hover {
+
+    background: #f8fafc;
+
+}
+
+/* ==========================================
+   Reservation Status Badge
+========================================== */
+
+.reservation-status {
+
+    display: inline-block;
+
+    min-width: 110px;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    text-transform: capitalize;
+
+    line-height: 1.2;
+
+}
+
+/* Pending */
+
+.reservation-status.pending {
+
+    background: #f59e0b;
+
+}
+
+/* Confirmed */
+
+.reservation-status.confirmed {
+
+    background: #2563eb;
+
+}
+
+/* Completed */
+
+.reservation-status.completed {
+
+    background: #16a34a;
+
+}
+
+/* Cancelled */
+
+.reservation-status.cancelled {
+
+    background: #dc2626;
+
+}
+
+/* In Progress */
+
+.reservation-status.in-progress,
+.reservation-status.inprogress {
+
+    background: #7c3aed;
+
+}
+
+/* Default */
+
+.reservation-status.default {
+
+    background: #6b7280;
+
+}
+
+.empty-message {
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 10px;
+
+    color: #64748b;
+
+}
+
+.error {
+
+    color: #dc2626;
+
+    font-weight: 600;
+
+}
+
+@media (max-width:768px) {
+
+    table {
+
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+
+    }
+
+}

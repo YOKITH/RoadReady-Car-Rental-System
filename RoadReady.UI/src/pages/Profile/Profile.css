@@ -1,0 +1,167 @@
+/* ==========================================================
+   Profile Page
+========================================================== */
+
+.profile-page {
+
+    min-height: 100vh;
+
+    padding: 60px 8%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+/* ==========================================================
+   Dark Overlay
+========================================================== */
+
+.profile-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    z-index: 0;
+}
+
+.profile-page > * {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* ==========================================================
+   Container
+========================================================== */
+
+.profile-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.profile-header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.profile-header h1 {
+
+    font-size: 42px;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,.4);
+}
+
+.profile-header p {
+
+    color: #e2e8f0;
+
+    font-size: 18px;
+
+    text-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+
+/* ==========================================================
+   Profile Card Section
+========================================================== */
+
+.profile-card-section {
+
+    background: rgba(255,255,255,.12);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.20);
+}
+
+/* ==========================================================
+   Reservation Section
+========================================================== */
+
+.reservation-section {
+
+    background: rgba(255,255,255,.12);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.20);
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .profile-page {
+
+        padding: 40px 5%;
+    }
+
+    .profile-header h1 {
+
+        font-size: 34px;
+    }
+
+    .profile-header p {
+
+        font-size: 16px;
+    }
+
+    .profile-card-section,
+    .reservation-section {
+
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .profile-header h1 {
+
+        font-size: 28px;
+    }
+
+}

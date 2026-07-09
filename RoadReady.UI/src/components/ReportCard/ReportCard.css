@@ -1,0 +1,73 @@
+/* ==============================
+   Report Card
+============================== */
+
+.report-card{
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    padding:24px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    transition:all .3s ease;
+
+    border-left:5px solid #2563eb;
+
+}
+
+.report-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.report-card-title{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    margin-bottom:12px;
+
+}
+
+.report-card-value{
+
+    color:#1e293b;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin:0;
+
+    word-break:break-word;
+
+}
+
+/* ==============================
+   Responsive
+============================== */
+
+@media(max-width:768px){
+
+    .report-card{
+
+        padding:20px;
+
+    }
+
+    .report-card-value{
+
+        font-size:26px;
+
+    }
+
+}

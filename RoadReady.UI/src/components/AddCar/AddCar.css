@@ -1,0 +1,196 @@
+/* ===========================
+   Overlay
+=========================== */
+
+.add-car-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    padding:20px;
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.add-car-container{
+    width:100%;
+    max-width:650px;
+    background:#ffffff;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+    animation:popup .25s ease;
+}
+
+@keyframes popup{
+
+    from{
+        transform:translateY(20px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+}
+
+.add-car-container h2{
+    text-align:center;
+    color:#1e293b;
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.add-car-container form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.add-car-container input,
+.add-car-container textarea{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+    font-family:inherit;
+    box-sizing:border-box;
+}
+
+.add-car-container input:focus,
+.add-car-container textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+.add-car-container textarea{
+    resize:vertical;
+    min-height:110px;
+}
+
+/* ===========================
+   Checkbox
+=========================== */
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:500;
+    color:#334155;
+}
+
+.checkbox input{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.button-group{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:10px;
+}
+
+.button-group button{
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.button-group button[type="submit"]{
+    background:#2563eb;
+    color:white;
+}
+
+.button-group button[type="submit"]:hover{
+    background:#1d4ed8;
+}
+
+.button-group button[type="submit"]:disabled{
+    background:#93c5fd;
+    cursor:not-allowed;
+}
+
+.cancel-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.cancel-btn:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   Error
+=========================== */
+
+.error{
+    background:#fee2e2;
+    color:#b91c1c;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:15px;
+    text-align:center;
+    font-weight:500;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .add-car-container{
+        padding:25px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .button-group button{
+        width:100%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .add-car-container{
+        padding:20px;
+    }
+
+    .add-car-container h2{
+        font-size:24px;
+    }
+
+    .add-car-container input,
+    .add-car-container textarea{
+        font-size:14px;
+    }
+
+}

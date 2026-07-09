@@ -1,0 +1,53 @@
+/* ==========================================
+   Login Page
+========================================== */
+
+.login-page {
+    width: 100%;
+}
+
+/* Login Heading */
+
+.login-title {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Forgot Password */
+
+.forgot-password {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Register Link */
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+}
+
+.register-link a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

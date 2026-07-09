@@ -1,0 +1,226 @@
+/* ==========================================================
+   Maintenance Table
+========================================================== */
+
+.maintenance-table-container {
+    background: #ffffff;
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.maintenance-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.maintenance-table-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.maintenance-table-header input {
+    width: 340px;
+    padding: 10px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.maintenance-table-header input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.2);
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.maintenance-table-wrapper {
+    overflow-x: auto;
+}
+
+.maintenance-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+}
+
+.maintenance-table thead {
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+.maintenance-table th {
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.maintenance-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #444;
+}
+
+.maintenance-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* ==========================================================
+   Priority Badge
+========================================================== */
+
+.priority {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.priority.low {
+    background: #d1e7dd;
+    color: #146c43;
+}
+
+.priority.medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.priority.high {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ==========================================================
+   Status Badge
+========================================================== */
+
+.status {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.completed {
+    background: #d1e7dd;
+    color: #146c43;
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.complete-btn {
+    background: #fd7e14;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.complete-btn:hover {
+    background: #e96b00;
+}
+
+.completed-btn {
+    background: #6c757d;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.no-data {
+    text-align: center;
+    padding: 35px;
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .maintenance-table {
+        min-width: 1050px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .maintenance-table-container {
+        padding: 16px;
+    }
+
+    .maintenance-table-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .maintenance-table-header h2 {
+        font-size: 20px;
+    }
+
+    .maintenance-table-header input {
+        width: 100%;
+    }
+
+    .maintenance-table th,
+    .maintenance-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .priority,
+    .status {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .complete-btn,
+    .completed-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+}

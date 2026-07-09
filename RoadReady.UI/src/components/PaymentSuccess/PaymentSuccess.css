@@ -1,0 +1,81 @@
+.payment-success{
+
+    background:#ffffff;
+    padding:50px;
+    margin-top:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.success-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    margin-bottom:25px;
+    border-radius:50%;
+    background:#22c55e;
+    color:#ffffff;
+    font-size:50px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.payment-success h2{
+    color:#15803d;
+    margin-bottom:15px;
+}
+
+.payment-success p{
+    color:#64748b;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+.success-buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-button{
+    text-decoration:none;
+    background:#2563eb;
+    color:#ffffff;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.primary-button:hover{
+    background:#1d4ed8;
+}
+
+.secondary-button{
+    text-decoration:none;
+    background:#e2e8f0;
+    color:#1e293b;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.secondary-button:hover{
+    background:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+    .payment-success{
+        padding:35px 20px;
+    }
+    .success-buttons{
+        flex-direction:column;
+    }
+}

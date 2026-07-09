@@ -1,0 +1,56 @@
+/* ==========================================
+   Register Page
+========================================== */
+
+.register-page {
+    width: 100%;
+}
+
+/* Register Heading */
+
+.register-title {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Two Column Layout */
+
+.register-row {
+    display: flex;
+    gap: 15px;
+}
+
+.register-column {
+    flex: 1;
+}
+
+/* Login Link */
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+}
+
+.login-link a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .register-row {
+        flex-direction: column;
+    }
+
+}

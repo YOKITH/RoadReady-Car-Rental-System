@@ -1,0 +1,61 @@
+.status-dropdown{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.status-dropdown label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.status-dropdown select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    background:#ffffff;
+
+    color:#1e293b;
+
+    font-size:15px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.status-dropdown select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+@media(max-width:576px){
+
+    .status-dropdown select{
+
+        font-size:14px;
+
+    }
+
+}

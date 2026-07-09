@@ -1,0 +1,83 @@
+/* =====================================
+   Car Grid
+===================================== */
+
+.car-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(320px,320px));
+
+    justify-content:center;
+
+    align-items:start;
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+/* =====================================
+   No Cars
+===================================== */
+
+.no-cars{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.no-cars h2{
+
+    color:#1e293b;
+
+    margin-bottom:15px;
+
+    font-size:30px;
+
+}
+
+.no-cars p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+    .car-grid{
+
+        grid-template-columns:repeat(auto-fill,minmax(300px,300px));
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .car-grid{
+
+        grid-template-columns:repeat(auto-fill,minmax(280px,280px));
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .car-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

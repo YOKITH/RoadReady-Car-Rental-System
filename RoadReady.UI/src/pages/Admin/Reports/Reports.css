@@ -1,0 +1,105 @@
+/* ===========================
+   Reports Page
+=========================== */
+
+.reports-page{
+
+    padding:30px;
+
+    background:#f3f4f6;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.reports-header{
+
+    margin-bottom:30px;
+
+}
+
+.reports-header h1{
+
+    font-size:34px;
+
+    color:#1e293b;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.reports-header p{
+
+    color:#64748b;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   Revenue & Reservation Cards
+=========================== */
+
+.reports-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+
+    gap:25px;
+
+    margin:25px 0;
+
+}
+
+/* ===========================
+   Common Report Sections
+=========================== */
+
+.reports-page > *{
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+    .reports-page{
+
+        padding:20px;
+
+    }
+
+    .reports-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .reports-header h1{
+
+        font-size:28px;
+
+    }
+
+    .reports-header p{
+
+        font-size:15px;
+
+    }
+
+}

@@ -1,0 +1,187 @@
+/* ==========================================================
+   Check-In Table Container
+========================================================== */
+
+.checkin-table-container {
+    background: #ffffff;
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.checkin-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.checkin-table-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.checkin-table-header input {
+    width: 320px;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.checkin-table-header input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.2);
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.checkin-table-wrapper {
+    overflow-x: auto;
+}
+
+.checkin-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.checkin-table thead {
+    background: #2563eb;
+}
+
+.checkin-table th,
+.checkin-table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.checkin-table thead th {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.checkin-table tbody td {
+    color: #374151;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.checkin-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.checkin-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.checkin-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==========================================================
+   Check-In Status Badge
+========================================================== */
+
+.checkin-table-status {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.checkin-table-status.checked-in {
+    background: #16a34a;
+}
+
+.checkin-table-status.pending {
+    background: #f59e0b;
+}
+
+.checkin-table-status.confirmed {
+    background: #2563eb;
+}
+
+.checkin-table-status.cancelled {
+    background: #dc2626;
+}
+
+.checkin-table-status.default {
+    background: #6b7280;
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+    .checkin-table {
+        min-width: 850px;
+        table-layout: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .checkin-table-container {
+        padding: 18px;
+    }
+
+    .checkin-table-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checkin-table-header h2 {
+        font-size: 20px;
+    }
+
+    .checkin-table-header input {
+        width: 100%;
+    }
+
+    .checkin-table th,
+    .checkin-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .checkin-table-status {
+        min-width: 100px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

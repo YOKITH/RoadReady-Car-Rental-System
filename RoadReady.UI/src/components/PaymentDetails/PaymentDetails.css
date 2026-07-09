@@ -1,0 +1,257 @@
+/* ===========================================
+   Overlay
+=========================================== */
+
+.payment-details-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+/* ===========================================
+   Container
+=========================================== */
+
+.payment-details-container {
+
+    width: 550px;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+/* ===========================================
+   Heading
+=========================================== */
+
+.payment-details-container h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #1e293b;
+
+}
+
+/* ===========================================
+   Payment Success Message
+=========================================== */
+
+.payment-success-message {
+
+    margin-bottom: 20px;
+
+    padding: 14px 18px;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    border: 1px solid #86efac;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+/* ===========================================
+   Payment Information
+=========================================== */
+
+.payment-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.info-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 15px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+
+}
+
+.info-item strong {
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+}
+
+.info-item span {
+
+    color: #475569;
+
+    word-break: break-word;
+
+}
+
+/* ===========================================
+   Payment Status
+=========================================== */
+
+.status {
+
+    display: inline-block;
+
+    min-width: 110px;
+
+    text-align: center;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    color: #ffffff !important;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+
+}
+
+.status.completed {
+
+    background: #16a34a;
+
+}
+
+.status.pending {
+
+    background: #f59e0b;
+
+}
+
+.status.failed {
+
+    background: #dc2626;
+
+}
+
+.status.refunded {
+
+    background: #7c3aed;
+
+}
+
+/* ===========================================
+   Close Button
+=========================================== */
+
+.close-btn {
+
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+.close-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+.close-btn:active {
+
+    transform: translateY(0);
+
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media (max-width: 600px) {
+
+    .payment-details-container {
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+    .info-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+    }
+
+    .status {
+
+        width: 100%;
+
+    }
+
+    .close-btn {
+
+        height: 48px;
+
+    }
+
+}

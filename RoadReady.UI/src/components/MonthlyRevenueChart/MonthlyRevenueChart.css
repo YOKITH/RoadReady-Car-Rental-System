@@ -1,0 +1,92 @@
+/* ===================================
+   Monthly Revenue Chart
+=================================== */
+
+.monthly-revenue-chart {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.monthly-revenue-chart h2 {
+    color: #1e293b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ===================================
+   Table Container
+=================================== */
+
+.monthly-revenue-table-container {
+    overflow-x: auto;
+}
+
+/* ===================================
+   Table
+=================================== */
+
+.monthly-revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Equal column widths */
+}
+
+.monthly-revenue-table thead {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.monthly-revenue-table th,
+.monthly-revenue-table td {
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.monthly-revenue-table th {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.monthly-revenue-table td {
+    font-size: 16px;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.monthly-revenue-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.monthly-revenue-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.monthly-revenue-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media (max-width: 768px) {
+
+    .monthly-revenue-chart {
+        padding: 20px;
+    }
+
+    .monthly-revenue-table {
+        table-layout: auto;
+        min-width: 400px;
+    }
+
+    .monthly-revenue-table th,
+    .monthly-revenue-table td {
+        padding: 14px;
+        text-align: center;
+    }
+
+}

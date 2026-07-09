@@ -1,0 +1,86 @@
+/* =====================================
+   Top Cars Report
+===================================== */
+
+.top-cars-report {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.top-cars-report h2 {
+    color: #1e293b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* =====================================
+   Table
+===================================== */
+
+.top-cars-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Makes all columns equal width */
+}
+
+.top-cars-table thead {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.top-cars-table th,
+.top-cars-table td {
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top-cars-table th {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top-cars-table td {
+    font-size: 16px;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.top-cars-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.top-cars-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.top-cars-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media (max-width: 768px) {
+
+    .top-cars-report {
+        padding: 18px;
+    }
+
+    .top-cars-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        table-layout: auto;
+    }
+
+    .top-cars-table th,
+    .top-cars-table td {
+        padding: 14px 18px;
+        text-align: center;
+    }
+
+}

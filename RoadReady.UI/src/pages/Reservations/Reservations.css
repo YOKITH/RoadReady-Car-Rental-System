@@ -1,0 +1,179 @@
+/* ==========================================================
+   Reservations Page
+========================================================== */
+
+.reservations-page {
+
+    min-height: 100vh;
+
+    padding: 60px 8%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+/* Overlay */
+
+.reservations-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    z-index: 0;
+}
+
+/* Keep content above overlay */
+
+.reservations-page>* {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.reservations-header {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.reservations-header h1 {
+
+    font-size: 46px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 12px;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,.45);
+}
+
+.reservations-header p {
+
+    font-size: 18px;
+
+    color: #e2e8f0;
+
+    text-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+
+/* ==========================================================
+   Loading
+========================================================== */
+
+.loading {
+
+    margin-top: 80px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+/* ==========================================================
+   Error
+========================================================== */
+
+.error {
+
+    margin-top: 80px;
+
+    text-align: center;
+
+    color: #fecaca;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+/* ==========================================================
+   Reservation List Container
+========================================================== */
+
+.reservation-list {
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.18);
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .reservations-page {
+
+        padding: 50px 6%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .reservations-page {
+
+        padding: 40px 5%;
+    }
+
+    .reservations-header h1 {
+
+        font-size: 34px;
+    }
+
+    .reservations-header p {
+
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .reservations-header h1 {
+
+        font-size: 28px;
+    }
+
+    .reservations-header p {
+
+        font-size: 15px;
+    }
+
+}

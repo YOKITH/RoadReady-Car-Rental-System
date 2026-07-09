@@ -1,0 +1,190 @@
+/* ===========================================
+   Overlay
+=========================================== */
+
+.reservation-details-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+/* ===========================================
+   Container
+=========================================== */
+
+.reservation-details-container {
+    width: 550px;
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-details-container h2 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #1e293b;
+}
+
+/* ===========================================
+   Reservation Information
+=========================================== */
+
+.reservation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+}
+
+.info-item strong {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.info-item span {
+    color: #475569;
+}
+
+/* ===========================================
+   Reservation Status Badge
+=========================================== */
+
+.reservation-status {
+    display: inline-block;
+
+    min-width: 120px;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    text-align: center;
+
+    color: #ffffff !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+/* Pending */
+
+.reservation-status.pending {
+    background: #f59e0b;
+}
+
+/* Confirmed */
+
+.reservation-status.confirmed {
+    background: #2563eb;
+}
+
+/* Completed */
+
+.reservation-status.completed {
+    background: #16a34a;
+}
+
+/* Cancelled */
+
+.reservation-status.cancelled {
+    background: #dc2626;
+}
+
+/* In Progress */
+
+.reservation-status.inprogress,
+.reservation-status.in-progress {
+    background: #7c3aed;
+}
+
+/* Default */
+
+.reservation-status.default {
+    background: #6b7280;
+}
+
+/* ===========================================
+   Close Button
+=========================================== */
+
+.close-btn {
+    display: block !important;
+    width: 100% !important;
+    height: 60px !important;
+
+    margin-top: 25px !important;
+
+    padding: 15px !important;
+
+    background: #eb5025 !important;
+    color: white !important;
+
+    font-size: 20px !important;
+    font-weight: bold !important;
+
+    border: none !important;
+    border-radius: 10px !important;
+
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #d83f1d;
+    transform: translateY(-2px);
+}
+
+.close-btn:active {
+    transform: translateY(0);
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media (max-width: 600px) {
+    .reservation-details-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .reservation-status {
+        width: 100%;
+    }
+
+    .close-btn {
+        height: 50px;
+        font-size: 16px;
+    }
+}

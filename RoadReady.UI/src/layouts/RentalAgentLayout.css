@@ -1,0 +1,354 @@
+/* ==========================================================
+   Rental Agent Layout
+========================================================== */
+
+.rental-layout{
+    display:flex;
+    min-height:100vh;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ==========================================================
+   Sidebar
+========================================================== */
+
+.rental-sidebar{
+    width:280px;
+
+    background:rgba(15,23,42,.92);
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    color:#ffffff;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:25px 20px;
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    box-shadow:4px 0 20px rgba(0,0,0,.25);
+
+    overflow-y:auto;
+}
+
+/* ==========================================================
+   Sidebar Logo
+========================================================== */
+
+.sidebar-logo{
+    text-align:center;
+
+    margin-bottom:30px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.sidebar-logo h2{
+    margin:0;
+
+    font-size:30px;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    text-shadow:0 3px 8px rgba(0,0,0,.35);
+}
+
+.sidebar-logo p{
+    margin-top:8px;
+
+    color:#cbd5e1;
+
+    font-size:15px;
+}
+
+/* ==========================================================
+   Navigation
+========================================================== */
+
+.sidebar-nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    flex:1;
+}
+
+.sidebar-nav a{
+    text-decoration:none;
+
+    color:#e2e8f0;
+
+    padding:14px 18px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.sidebar-nav a:hover{
+    background:rgba(255,255,255,.10);
+
+    color:#ffffff;
+
+    transform:translateX(6px);
+}
+
+.sidebar-nav a.active{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:#ffffff;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.35);
+}
+
+.sidebar-nav hr{
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin:15px 0;
+}
+
+/* ==========================================================
+   Footer
+========================================================== */
+
+.sidebar-footer{
+    margin-top:auto;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.user-info{
+    margin-bottom:18px;
+}
+
+.user-info span{
+    display:block;
+
+    color:#cbd5e1;
+
+    font-size:13px;
+
+    margin-bottom:6px;
+}
+
+.user-info strong{
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+}
+
+/* ==========================================================
+   Logout Button
+========================================================== */
+
+.logout-btn{
+    width:100%;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#dc2626;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(239,68,68,.35);
+}
+
+/* ==========================================================
+   Main Content
+========================================================== */
+
+.rental-content{
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.rental-header{
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    padding:22px 35px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
+}
+
+.rental-header h1{
+    margin:0;
+
+    color:#ffffff;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.35);
+}
+
+.rental-header p{
+    margin-top:8px;
+
+    color:#e2e8f0;
+
+    font-size:15px;
+}
+
+/* ==========================================================
+   Page Body
+========================================================== */
+
+.rental-body{
+    flex:1;
+
+    padding:30px;
+
+    overflow-y:auto;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(8px);
+}
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+.rental-sidebar::-webkit-scrollbar{
+    width:6px;
+}
+
+.rental-sidebar::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.rental-sidebar::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.25);
+
+    border-radius:20px;
+}
+
+.rental-sidebar::-webkit-scrollbar-thumb:hover{
+    background:rgba(255,255,255,.45);
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:992px){
+
+    .rental-layout{
+        flex-direction:column;
+    }
+
+    .rental-sidebar{
+        width:100%;
+    }
+
+    .sidebar-nav{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .rental-header{
+        padding:20px;
+    }
+
+    .rental-body{
+        padding:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sidebar-nav{
+        flex-direction:column;
+    }
+
+    .rental-header h1{
+        font-size:24px;
+    }
+
+    .rental-header p{
+        font-size:14px;
+    }
+
+    .rental-body{
+        padding:18px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .sidebar-logo h2{
+        font-size:26px;
+    }
+
+    .sidebar-logo p{
+        font-size:14px;
+    }
+
+    .logout-btn{
+        height:42px;
+    }
+
+    .rental-body{
+        padding:15px;
+    }
+
+}

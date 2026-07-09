@@ -1,0 +1,298 @@
+/* ==========================================================
+   Create Reservation Page
+========================================================== */
+
+.create-reservation-page {
+
+    min-height: 100vh;
+
+    padding: 60px 8%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+/* ==========================================================
+   Overlay
+========================================================== */
+
+.create-reservation-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    z-index: 0;
+}
+
+.create-reservation-page>* {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.page-header {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.page-header h1 {
+
+    font-size: 44px;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,.4);
+}
+
+.page-header p {
+
+    color: #e2e8f0;
+
+    font-size: 18px;
+
+    text-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+
+/* ==========================================================
+   Layout
+========================================================== */
+
+.reservation-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: flex-start;
+}
+
+/* ==========================================================
+   Car Summary
+========================================================== */
+
+.car-summary {
+
+    background: rgba(255,255,255,.12);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.car-summary img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.car-details {
+
+    padding: 28px;
+}
+
+.car-details h2 {
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+    font-size: 30px;
+}
+
+.car-details p {
+
+    color: #e2e8f0;
+
+    margin-bottom: 14px;
+
+    line-height: 1.7;
+}
+
+.car-details strong {
+
+    color: #ffffff;
+}
+
+/* ==========================================================
+   Status
+========================================================== */
+
+.available,
+.unavailable {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    color: #fff;
+
+    font-weight: 600;
+}
+
+.available {
+
+    background: #16a34a;
+}
+
+.unavailable {
+
+    background: #dc2626;
+}
+
+/* ==========================================================
+   Error Page
+========================================================== */
+
+.reservation-error {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+}
+
+.reservation-error h2 {
+
+    font-size: 40px;
+}
+
+.reservation-error p {
+
+    font-size: 18px;
+
+    color: #e2e8f0;
+}
+
+.reservation-error button {
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.reservation-error button:hover {
+
+    background: #1d4ed8;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .reservation-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .create-reservation-page {
+
+        padding: 40px 5%;
+    }
+
+    .page-header h1 {
+
+        font-size: 34px;
+    }
+
+    .page-header p {
+
+        font-size: 16px;
+    }
+
+    .car-summary img {
+
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .page-header h1 {
+
+        font-size: 28px;
+    }
+
+    .car-details {
+
+        padding: 20px;
+    }
+
+    .car-details h2 {
+
+        font-size: 24px;
+    }
+
+}
